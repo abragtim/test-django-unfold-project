@@ -15,7 +15,7 @@ class DocumentInline(StackedInline):
 
 class FolderAdmin(ModelAdmin):
     inlines = [DocumentInline]
-    list_display = ['name', 'description']
+    list_display = ["name", "description"]
     actions_detail = ['count_documents']
 
     @action(description="Count documents", url_path="change-detail-action", icon="person")

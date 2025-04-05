@@ -57,7 +57,7 @@ ROOT_URLCONF = 'test_django_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -129,6 +129,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 UNFOLD = {
     "SHOW_LANGUAGES": True,
+    "DASHBOARD_CALLBACK": "app_main.views.admin_dashboard_callback",
 }
 
 LANGUAGES = (
