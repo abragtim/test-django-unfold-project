@@ -18,4 +18,4 @@ stop:
 	if [ -n "$$PID" ]; then kill $$PID; else echo "No Gunicorn process found."; fi
 
 # Combined target to update repo, restart nginx, and start gunicorn
-deploy: update restart-nginx stop
+deploy: restart-nginx stop start
