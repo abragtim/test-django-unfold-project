@@ -2,6 +2,7 @@
 update:
 	git fetch
 	git pull
+	sleep 5
 
 # Restart nginx
 restart-nginx:
@@ -17,4 +18,4 @@ stop:
 	if [ -n "$$PID" ]; then kill $$PID; else echo "No Gunicorn process found."; fi
 
 # Combined target to update repo, restart nginx, and start gunicorn
-deploy: update restart-nginx stop start
+deploy: update restart-nginx stop
