@@ -18,7 +18,7 @@ from django.conf.urls.i18n import i18n_patterns
 from django.conf.urls.static import static
 from django.urls import include, path
 
-from settings import STATIC_URL, STATIC_ROOT
+from .settings import STATIC_URL, STATIC_ROOT
 
 
 urlpatterns = (
