@@ -125,7 +125,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Directory where the static files will be collected to
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Path to collect static files
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')  # Path to collect static files
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
