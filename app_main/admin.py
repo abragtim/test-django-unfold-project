@@ -4,6 +4,8 @@ from django.shortcuts import redirect
 from django.urls import reverse
 from unfold.admin import ModelAdmin, StackedInline
 from unfold.decorators import action
+from tinymce.widgets import TinyMCE
+from tinymce.models import HTMLField
 from .models import Folder, Document
 
 
@@ -29,7 +31,11 @@ class FolderAdmin(ModelAdmin):
 
 
 class DocumentAdmin(ModelAdmin):
-    pass
+    formfield_overrides = {
+        HTMLField: {
+            'widget': TinyMCE(),
+        }
+    }
 
 
 # Register your models here.

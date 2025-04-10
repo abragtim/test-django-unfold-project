@@ -1,4 +1,5 @@
 from django.db import models
+from tinymce.models import HTMLField
 
 
 # Create your models here.
@@ -21,7 +22,7 @@ class Folder(models.Model):
 class Document(models.Model):
     name = models.CharField(max_length=255)
     description = models.CharField(max_length=255, default="")
-    content = models.TextField()
+    content = HTMLField()
     folder = models.ForeignKey(Folder, on_delete=models.CASCADE, related_name='documents')
 
     def __str__(self):
