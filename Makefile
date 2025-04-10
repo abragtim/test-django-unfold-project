@@ -2,7 +2,6 @@
 update:
 	git fetch
 	git pull
-	sleep 5
 
 # Restart nginx
 restart-nginx:
