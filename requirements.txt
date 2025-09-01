@@ -7,4 +7,5 @@ pip==25.0
 django-unfold==0.54.0
 django-tinymce==3.7.1
 gunicorn==22.0.0
+psycopg2-binary==2.9.10
 
