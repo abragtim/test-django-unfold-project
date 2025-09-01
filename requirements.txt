@@ -5,4 +5,5 @@ setuptools==75.8.0
 wheel==0.45.1
 pip==25.0
 django-unfold==0.54.0
+django-tinymce==3.7.1
 
