@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-qw3ny-^q(k78s=#=pt+0ya*o5+lfx8$t-dh9_+y5xx#2*$fbx_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['74.234.182.181', '127.0.0.1', '91.98.121.20', 'abragtim_test_web.91.98.121.20.sslip.io']
+ALLOWED_HOSTS = ['74.234.182.181', '127.0.0.1', '91.98.121.20', 'abragtim-test-web.91.98.121.20.sslip.io']
 
 
 # Application definition
